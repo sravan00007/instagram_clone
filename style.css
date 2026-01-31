@@ -40,14 +40,15 @@ html,body{
    top:0px;
    /* same as top */
    left: 0px;
-   border-right: 0.2rem solid var(--grey);
+   border-right: 0.01rem solid var(--grey);
    padding: 0.5em;
    margin-right: 0.01rem;
    justify-content: space-between;
    /* align-items: center ; */
    display: flex;
    flex-direction: column;
-   
+   padding-right: 0.001em;
+  
 
 }
 
@@ -69,7 +70,7 @@ html,body{
 .home{
    margin-top: 0.5em;
    padding: 0.6em;
-  
+   
 
    display: flex;
    text-decoration: none;
@@ -178,9 +179,9 @@ a{
 }
 
 .home-page{
-   margin-left: 13em;
+   
    overflow-x: hidden;
-
+   margin-left: 15%;
 }
 
 .user-story{
@@ -189,13 +190,20 @@ a{
    border: 1px solid white;
    border-radius: 60%;
    margin: 1em;;
+   
 }
  
 .insta-stories{
+   
    display: flex;
    overflow-y: hidden;
    scroll-behavior: smooth;
    height: 7.5em;
    flex-direction: row;
    border-left: 1px;
+  
+
+}
+.insta-stories::-webkit-scrollbar {
+  display: none;
 }
